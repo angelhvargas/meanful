@@ -1,0 +1,23 @@
+{
+  "name": "learning",
+  "version": "0.0.1",
+  "description": "test and learning MEAN stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines" : {
+    "node": "8.9.x",
+    "npm": "5.6.x"
+  },
+  "author": "Angel Vargas",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "jade": "^1.11.0",
+    "mongoose": "^5.0.14",
+    "morgan": "^1.9.0",
+    "stylus": "^0.54.5"
+  }
+}
