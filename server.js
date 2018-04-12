@@ -31,8 +31,9 @@ app.use(express.static(__dirname + '/public'));
 
 
 //database logic
- mongoose.connect('mongodb://localhost/multivision');
-
+// mongoose.connect('mongodb://localhost/multivision');
+$connection_string = process.env.NODE_ENV == 'development' ? 'mongodb://localhost/multivision' : 'mongodb://sidelab:sidelab123@ds147267.mlab.com:47267/heroku_vcxz0c31'
+mongoose.connect($connection_string);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error...'));
 db.once('open', function callback() {
