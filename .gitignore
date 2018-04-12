@@ -2,3 +2,5 @@ docker/
 docker2/
 .vscode/
 package-lock.json
+node-modules/
+public/vendor/
