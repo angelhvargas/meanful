@@ -4,3 +4,4 @@ docker2/
 package-lock.json
 node-modules/
 public/vendor/
+node_modules/
